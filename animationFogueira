@@ -1,0 +1,14 @@
+extends Node2D
+
+
+var fogueira_animation: AnimatedSprite2D
+
+
+func _ready():
+
+	fogueira_animation = $fogueira_animation  # Corrigido para $fogueira_animation
+
+	if fogueira_animation:
+		fogueira_animation.play("fog_animation")
+	else:
+		print("Nó 'fogueira_animation' não encontrado.")
